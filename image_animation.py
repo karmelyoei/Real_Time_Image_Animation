@@ -177,8 +177,8 @@ else:
     display(js)
     
     def video_frame(label, bbox):
-    data = eval_js('stream_frame("{}", "{}")'.format(label, bbox))
-    return data
+        data = eval_js('stream_frame("{}", "{}")'.format(label, bbox))
+        return data
     # start streaming video from webcam
     video_stream()
     # label for video

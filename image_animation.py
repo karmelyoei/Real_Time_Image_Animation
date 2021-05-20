@@ -43,7 +43,7 @@ if video_path:
     cap = cv2.VideoCapture(video_path) 
     print("[INFO] Loading video from the given path")
 else:
-    # cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0)
     print("[INFO] Initializing front camera...")
 
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
